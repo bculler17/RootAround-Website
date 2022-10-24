@@ -22,7 +22,7 @@ body {
 .index-header{
     color: white;
     padding-left:2%;
-    background-image: url("./roots.jpg");
+    background-image: url(".\images\.jpg");
     z-index: 2;
     position:fixed;
     width: 100%;}
