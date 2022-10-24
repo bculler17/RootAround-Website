@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Using Root Around</title>
+        <meta name="author" content="Beth Culler">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./prettyIndex.css">
+        <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.2/dist/terminal.min.css" />
+    </head>
+    <body>
+        <script src="./cool.js"></script>
+        <div class="index-header"> <h1 style="z-index:1"> > Root Around </h1> </div>
+        
+        <div id="myModal2" class="modal">
+                    <span class="close cursor" onclick="closeModal(2)">&times;</span>
+                    <div class="modal-content">
+
+                        <div class="mySlides2">
+                            <div class="numbertext">1 / 9</div>
+                            <img class="mimg" src="./screenshot.png" alt="Image1">
+                        </div>
+
+                        <div class="mySlides2">
+                            <div class="numbertext">2 / 9</div>
+                            <img class="mimg" src="./screenshot2.png" alt="Image2">
+                        </div>
+
+                        <div class="mySlides2">
+                            <div class="numbertext">3 / 9</div>
+                            <img class="mimg" src="./screenshot3.png" alt="Image3">
+                        </div>
+    
+                        <div class="mySlides2">
+                            <div class="numbertext">4 / 9</div>
+                            <img class="mimg" src="./screenshot4.png" alt="Image4">
+                        </div>
+                                
+                        <div class="mySlides2">
+                            <div class="numbertext">5 / 9</div>
+                            <img class="mimg" src="./screenshot5.png" alt="Image5">
+                        </div>
+                        
+                        <div class="mySlides2">
+                            <div class="numbertext">6 / 9</div>
+                            <img class="mimg" src="./screenshot6.png" alt="Image6">
+                        </div>
+                        
+                        <div class="mySlides2">
+                            <div class="numbertext">7 / 9</div>
+                            <img class="mimg" src="./screenshot7.png" alt="Image7">
+                        </div>
+                        
+                        <div class="mySlides2">
+                            <div class="numbertext">8 / 9</div>
+                            <img class="mimg" src="./screenshot8.png" alt="Image8">
+                        </div>
+                        
+                        <div class="mySlides2">
+                            <div class="numbertext">9 / 9</div>
+                            <img class="mimg" src="./screenshot9.png" alt="Image9">
+                        </div>
+    
+                        <a class="prev" style="color: gray;" onclick="plusSlides(-1, 2)">&#10094;</a>
+                        <a class="next" style="color: gray;" onclick="plusSlides(1, 2)">&#10095;</a>
+
+                        <div class="caption-container">
+                            <p id="caption2"></p>
+                        </div>
+                        <div style="display:none">
+                            <div class="column">
+                                <img class="demo2 cursor" src="./screenshot.png" style="width:100%" onclick="currentSlide(1, 2)" alt="Commands are organized by topic as well as command name, and are furthermore sorted by how to do various tasks">
+                            </div>
+                            <div class="column">
+                                <img class="demo2 cursor" src="./screenshot2.png" style="width:100%" onclick="currentSlide(2, 2)" alt="Long and complex queries are quickly copied with a simple double click">
+                            </div>
+                            <div class="column">
+                                <img class="demo2 cursor" src="./screenshot3.png" style="width:100%" onclick="currentSlide(3, 2)" alt="Commands can be edited or deleted">
+                            </div>
+                            <div class="column">
+                                <img class="demo2 cursor" src="./screenshot4.png" style="width:100%" onclick="currentSlide(4, 2)" alt="Topics can be renamed or deleted">
+                            </div>
+                            <div class="column">
+                                <img class="demo2 cursor" src="./screenshot5.png" style="width:100%" onclick="currentSlide(5, 2)" alt="New commands can be quickly and easily added">
+                            </div>
+                            <div class="column">
+                                <img class="demo2 cursor" src="./screenshot6.png" style="width:100%" onclick="currentSlide(6, 2)" alt="New platforms can be quickly and easily added">
+                            </div>
+                            <div class="column">
+                                <img class="demo2 cursor" src="./screenshot7.png" style="width:100%" onclick="currentSlide(7, 2)" alt="Platforms can be reordered or removed">
+                            </div>
+                            <div class="column">
+                                <img class="demo2 cursor" src="./screenshot8.png" style="width:100%" onclick="currentSlide(8, 2)" alt="Commands and platforms can be exported and imported to share with others">
+                            </div>
+                            <div class="column">
+                                <img class="demo2 cursor" src="./screenshot9.png" style="width:100%" onclick="currentSlide(9, 2)" alt="Commands can be easily searched by using the Search bar. Root Around will cycle through each command that matches the search description">
+                            </div>
+                        </div>
+                    </div>
+                </div>      
+        
+            <div id="navigator">
+                <div id="sticky">
+                    <a href="./index.html#top"> > Introduction</a>
+                    <a onclick="openModal(2);currentSlide(1, 2)"> > Features </a>
+                    <a href="./index.html#quickstart"> > Quick Start Guide </a>                 
+                    <a onclick="showUsingLinks()"> > Using </a>
+                    
+                    <div id="myDropdowns" class="usingDropdown">
+                        <a href="#add"> > All</a>
+                        <a href="#add"> > Adding commands</a>
+                        <a href="#edit"> > Editing commands </a>
+                        <a href="#copy"> > Copying commands </a>                 
+                        <a href="#delete"> > Deleting commands </a>
+                        <a href="#newtopic"> > Adding topics </a>
+                        <a href="#rename"> > Renaming topics </a>
+                        <a href="#deletetopic"> > Deleting topics </a>
+                        <a href="#addplatform"> > Adding platforms </a>
+                        <a href="#reorderplatform"> > Reordering platforms </a>
+                        <a href="#removeplatform"> > Removing platforms </a>
+                        <a href="#full"> > Exporting Full</a>
+                        <a href="#plat"> > Exporting Platforms</a>
+                        <a href="#cmd"> > Exporting Commands</a>
+                        <a href="#imfull"> > Importing Full</a>
+                        <a href="#pimport"> > Importing Platforms </a>
+                        <a href="#import"> > Importing Commands </a>
+                    </div>
+                </div>
+            </div>
+                
+           
+            <div id="add" class="side-by-side">    
+                <div class="aboutRootAround" style="margin-bottom:5%;">
+                    <header> <h3> Root Around - How to Add New Commands </h3>
+                    </header>
+                    <p>
+                        To add new commands to a Root Around Command Box, either select the "+" tab that is located in the top row of tabs, or
+                        click on the "Add New Command" button that is located on the top right side of the screen. Once on the "Add New Command" 
+                        page, select a platform and a topic under which the new command should be stored. The topic can be an existing topic 
+                        of your choice, or select "Add New Topic" and provide a name for a new topic. Then provide a description of the new command,
+                        the command itself, and any notes you wish to include about it. Finally, click "Save" and you will be automatically 
+                        navigated to your new command in your Command Box which will be immediately visible and ready for use. 
+                    </p>
+                    <p>
+ 
+                        <strong>NOTE: </strong> To prevent 
+                        multiple copies of identical commands under the same platform and topic, you will be unable to save the command if the command already exists with the same command description and notes.
+                    </p>
+                    
+                </div>
+                <div class="float-child" style="padding-top: 12rem;"> 
+                    <video width="520" height="280" controls>
+                            <source src="addcmd.mp4" type="video/mp4">  
+                    </video>
+                </div>
+                
+            </div>
+        
+            <div id="edit" class="side-by-side">    
+                <div class="usingRootAround">
+                    <header> <h3> Root Around - How to Edit Commands </h3>
+                    </header>
+                    <p>
+                        To edit existing commands in a Root Around Command Box, right click anywhere in the Command area of an existing command and select "Edit command."
+                        Once on the "Edit Command" page, edit any of the details about the command you wish to change. You can edit the platform
+                        or topic under which the command is stored. The topic can be an existing topic of your choice or a new topic. To store
+                        the command under a new topic, select "Add New Topic" and provide a name for the new topic. You can also edit the 
+                        command description, the command itself, and/or any notes about the command that you wish to add or change. 
+                        Finally, click "Save" and you will be automatically navigated to the updated command in your Command Box. 
+                    </p>
+                    <p>
+ 
+                        <strong>NOTE: </strong> To prevent 
+                        multiple copies of identical commands under the same platform and topic, you will be unable to save the command if no changes were made.
+                    </p>
+                </div>
+                <div class="float-child" style="margin:auto;"> 
+                    <video width="520" height="280" controls>
+                            <source src="editcmd.mp4" type="video/mp4">  
+                    </video>
+                </div>
+                
+            </div>
+        
+            <div id="copy" class="side-by-side">    
+                <div class="usingRootAround">
+                    <header> <h3> Root Around - How to Copy Commands </h3>
+                    </header>
+                    <p>
+                        Copying commands is useful when the same command can be used in multiple platforms and you would therefore like to store the
+                        command in each platform. Copying commands is also useful when you want to store the same command under different topics 
+                        for faster command lookup. 
+                    </p>
+                    
+                    <p>
+                        To make a copy of an existing command in a Root Around Command Box, right click anywhere in the Command area of an existing command and select "Edit command."
+                        Once on the "Edit Command" page, you can edit either the platform and/or topic under which the command will be copied to. 
+                        The topic can be an existing topic of your choice or a new topic. To store the command under a new topic, select "Add New Topic" and provide a name for the new topic. 
+                        You can also edit the command description, the command itself, and/or any notes about the command that you wish to add or change. 
+                        Once the changes have been made, click "Copy" and you will be automatically navigated to the copied command in your Command Box. The original
+                        command will not be changed or removed, only a copy will have been made with the changes you have provided.
+                        
+                    </p>
+                    <p>
+ 
+                        <strong>NOTE: </strong> To prevent multiple copies of identical commands under the same platform and topic, you will be unable to copy the command if no changes were made.
+                    </p>
+                    
+                    
+                </div>
+                <div class="float-child" style="margin:auto;"> 
+                    <video width="520" height="280" controls>
+                            <source src="copycmd.mp4" type="video/mp4">  
+                    </video>
+                </div>
+                
+            </div>
+        
+        <div id="delete" class="side-by-side">    
+                <div class="usingRootAround">
+                    <header> <h3> Root Around - How to Delete Commands </h3>
+                    </header>
+                    <p>
+                        To delete a command in a Root Around Command Box, right click anywhere in the Command area of an existing command and select "Delete command."
+                        If you are sure that you want to permanently delete the command, choose "Yes" and the command will be immediately and permanently removed
+                        from your Command Box. Commands are unable to be recovered after being deleted. 
+                    </p>
+                </div>
+                <div class="float-child" style="margin:auto;"> 
+                    <video width="520" height="280" controls>
+                            <source src="delete.mp4" type="video/mp4">  
+                    </video>
+                </div>
+                
+            </div>
+        
+        <div id="newtopic" class="side-by-side">    
+                <div class="usingRootAround">
+                    <header> <h3> Root Around - How to Add New Topics </h3>
+                    </header>
+                    <p>
+                        To create a new topic in a Root Around Command Box, select "Add New Topic" either on the "Add New Command" or "Edit Command" page
+                        and provide a name for the new topic. Provide a new command for the topic or edit an existing one to be stored under the new topic,
+                        then click "Save." You will then be automatically navigated to the new topic in your Command Box.
+                    </p>
+                    <p>
+                        <strong>NOTE: </strong>You will be unable to add a new topic if the topic already exists, so be sure to provide
+                        a new topic name. If the topic already exists, you will be alerted and no new topic will be created; your Command
+                        Box will remain unchanged. 
+                    </p>
+                </div>
+                <div class="float-child" style="margin:auto;"> 
+                    <video width="520" height="280" controls>
+                            <source src="newtopics.mp4" type="video/mp4">  
+                    </video>
+                </div>
+                
+            </div>
+        
+        <div id="rename" class="side-by-side">    
+                <div class="usingRootAround">
+                    <header> <h3> Root Around - How to Rename Topics </h3>
+                    </header>
+                    <p>
+                        To rename a topic in a Root Around Command Box, right click anywhere in the Topic tab area of an existing topic and select "Rename."
+                        Provide a new name for the topic and click "OK." The new name can start with the same letter as the original topic or start with a different letter.
+                        The topic will be updated immediately and placed in the correct tab and alphabetical order.
+                    </p>
+                    <p>
+                        <strong>NOTE: </strong>A topic with zero commands is unable to be renamed. 
+                        Attempting to rename a topic with zero commands will result in the tab being deleted.
+                        To rename a topic that has zero commands, please delete the topic and then add a new topic with the desired name 
+                        on the "Add New Command" or "Edit Command" page. Then provide a command to be stored in the topic.
+                    </p>
+                    <p>
+                        In addition, you will be unable to rename the topic with a name that already exists, so be sure to provide
+                        a new topic name. If the topic already exists, you will be alerted and the topic will not be renamed; your Command
+                        Box will remain unchanged. 
+                    </p>
+                    
+                </div>
+                <div class="float-child" style="margin:auto;"> 
+                    <video width="520" height="280" controls>
+                            <source src="renametopics.mp4" type="video/mp4">  
+                    </video>
+                </div>
+                
+            </div>
+        
+        
+        <div id="deletetopic" class="side-by-side">    
+                <div class="usingRootAround">
+                    <header> <h3> Root Around - How to Delete Topics </h3>
+                    </header>
+                    <p>
+                        To delete a topic in a Root Around Command Box, right click anywhere in the Topic tab area of an existing topic and select "Delete tab."
+                        If you are sure that you want to permanently delete the topic <strong> as well as </strong> any commands that exist under that topic, 
+                        choose "Yes" and the topic and any commands  that exist under it will be immediately and permanently removed
+                        from your Command Box. Topics and commands are unable to be recovered after being deleted. 
+                    </p>
+                </div>
+                <div class="float-child" style="margin:auto;"> 
+                    <video width="520" height="280" controls>
+                            <source src="deletetopics.mp4" type="video/mp4">  
+                    </video>
+                </div>
+                
+            </div>
+        
+        
+        <div id="addplatform" class="side-by-side">    
+                <div class="usingRootAround">
+                    <header> <h3> Root Around - How to Add New Platforms </h3>
+                    </header>
+                    <p>
+                        To add a new platform in a Root Around Command Box, select "Add New Platform" in the Platform drop-down menu at the 
+                        top of the screen. Provide the platform name and click "OK." The new platform will be immediately visible in the drop-down
+                        list. Select it to be navigated to it. There will initially be zero commands in the platform, but you are immediately able
+                        to start adding new commands to it via the "Add New Command" page or by importing a dumpfile of commands for that platform.
+                    </p>
+                    <p>
+                        <strong>NOTE:</strong> If importing a dump file of commands for the new platform, you can skip this step of creating the new
+                        platform. Running a platform import will automatically create the new platform if it does not
+                        already exist.
+                    </p>
+                    <p>
+                        <strong>NOTE:</strong> You will be unable to add a new platform if the platform already exists. If the platform already exists, you will be alerted and no new platform will be created; your Command Box will remain unchanged.
+                    </p>
+                </div>
+                <div class="float-child" style="margin:auto;"> 
+                    <video width="520" height="280" controls>
+                            <source src="addplatform.mp4" type="video/mp4">  
+                    </video>
+                </div>
+                
+            </div>
+        
+        <div id="reorderplatform" class="side-by-side">    
+                <div class="usingRootAround">
+                    <header> <h3> Root Around - How to Reorder Platforms </h3>
+                    </header>
+                    <p>
+                        Reordering the platforms in a Root Around Command Box changes the order in which they are listed in the Platform drop-down menu.
+                        This is useful if you desire to place the platforms you use more frequently near the top of the list, or to group similar platforms
+                        together for quicker lookup. The platform that is first in the list is the platform upon which Root Around opens; those commands are
+                        seen first.
+                        
+                    </p>
+                    <p>To reorder the platforms, use the "Customize Platforms" tool located in the Tools menu at the top of the screen. Use the up and down
+                        arrows on the right side of the screen to place the "Selected" platforms in the desired order. Click "Save" and the changes will be immediately
+                        visible. 
+                    </p>
+    
+                </div>
+                <div class="float-child" style="margin:auto;"> 
+                    <video width="520" height="280" controls>
+                            <source src="reorderplatforms.mp4" type="video/mp4">  
+                    </video>
+                </div>
+                
+            </div>
+        
+        <div id="removeplatform" class="side-by-side">    
+                <div class="usingRootAround">
+                    <header> <h3> Root Around - How to Remove Platforms </h3>
+                    </header>
+                    <p>
+                        To remove a platform in a Root Around Command Box, use the "Customize Platforms" tool located in the Tools menu at the top of the screen.
+                        Use the left and right arrows in the middle of the screen to move the undesired platform(s) from the "Selected" list to
+                        the "Available" list. Click "Save" and the "Available" platforms will no longer be visible in the
+                        Command Box.
+                    </p>
+                    <p>
+                        <strong>NOTE:</strong> The "Available" platforms are not visible in the Command Box but can be re-added at any time. 
+                        They are still available to include. Just
+                        move them from the "Available" list to the "Selected" list, click "Save," and those commands will be immediately visible.  
+                    </p>
+    
+                </div>
+                <div class="float-child" style="margin:auto;"> 
+                    <video width="520" height="280" controls>
+                            <source src="removeplatforms.mp4" type="video/mp4">  
+                    </video>
+                </div>
+                
+            </div>
+        
+        
+        <div id="full" class="side-by-side">    
+                <div class="usingRootAround">
+                    <header> <h3> Root Around - Full Exports </h3>
+                    </header>
+                    <p>
+                        Full exports ensure that commands are never lost and are always available. Running a Full export will create a single
+                        .sql dump file that when imported into a Root Around Command Box, instructs Root Around how to create an identical Command
+                        Box to the one that was exported. All of the current platforms, commands, and customizations will be copied into the
+                        file. This allows you to move your Command Box from one computer to another, or to recover
+                        it in the event of hardware failure or another mishap.
+                    </p>
+                    <p> 
+                        <strong> Note:</strong> To be able to restore your Command Box after hardware failure, make sure to store the dump
+                        file created from the Full export in a separate location from your Command Box. 
+                    </p>
+                    <p>
+                        To run a Full export, navigate to the File menu on the top left side of the screen and select "Export..." Choose the
+                        "Full" export type and click "OK." Finally, choose a directory to store the .sql Dump file. Providing a file name is
+                        not necessary, but if preferred, provide a file name that uses the .sql file extension, such as "Full_Export.sql."
+                        When ready, click "Export." A Dump file will be immediately created containing instructions for Root Around on how
+                        to recreate your entire current Command Box. If the Command Box needs to be moved to another computer or recovered
+                        after a mishap, import this Dump file into Root Around, and your current Command Box will be automatically recreated.
+                    </p>
+                    <p> 
+                        <i> Note: Your Command Box will be unaffected by an export. Exports 
+                            only create an external file and do not alter any of the contents of a Command Box. </i>
+                    </p>
+                    <p> 
+                        It is recommended to run a Full export before importing any dump file to be able to recover your current Command Box
+                        and undo any unwanted changes that occurred during the import.
+                    </p>
+    
+                </div>
+                <div class="float-child" style="margin:auto;"> 
+                    <video width="520" height="280" controls>
+                            <source src="fullexport.mp4" type="video/mp4">  
+                    </video>
+                </div>
+                
+            </div>
+        
+        
+        <div id="plat" class="side-by-side">    
+                <div class="usingRootAround">
+                    <header> <h3> Root Around - Platform Exports  </h3>
+                    </header>
+                    <p>
+                        Platform exports allow Root Around users to easily share platforms and all of the commands stored under that platform with other Root Around users to store
+                        in their own Command Box. Running a Platform export will create a single
+                        .sql dump file that when imported into a Root Around Command Box, instructs Root Around how to create the platform that was exported
+                        and add all of the commands that were exported with it. 
+                    </p>
+                    <p>
+                        To run a Platform export, navigate to the File menu on the top left side of the screen and select "Export..." Choose the
+                        "Platform" export type and the Platform you wish to export, then click "OK." Finally, choose a directory to store the .sql Dump file. Providing a file name is
+                        not necessary, but if preferred, provide a file name that uses the .sql file extension, such as "Oracle_commands_export.sql."
+                        When ready, click "Export." A Dump file will be immediately created containing instructions for Root Around on how
+                        to recreate that platform and add all of its commands. If another Root Around user does not have this platform in their Command Box but
+                        would like to have it, share the dump file with them to import into their Root Around Command Box. 
+                        This will automatically create the platform and add all of the commands for them. 
+                    </p>
+                    <p> 
+                        <i> Note: Your Command Box will be unaffected by an export. Exports 
+                            only create an external file and do not alter any of the contents of a Command Box. </i>
+                    </p>
+    
+                </div>
+                <div class="float-child" style="margin:auto;"> 
+                    <video width="520" height="280" controls>
+                            <source src="pfexports.mp4" type="video/mp4">  
+                    </video>
+                </div>
+                
+            </div>
+        
+        <div id="cmd" class="side-by-side">    
+                <div class="usingRootAround">
+                    <header> <h3> Root Around - Command Exports </h3>
+                    </header>
+                    <p>
+                        "Currently Selected Commands" exports provide the ability to easily share commands with other Root Around users to store
+                        in their own Command Box. Running a "Currently Selected Commands" export will create a single
+                        .sql file that when imported into a Root Around Command Box, will automatically add all of the commands and notes that were exported. 
+                        It will also create the platform and/or topic under which the commands are stored if they do not already exist in the Command Box.
+                    </p>
+                    <p>
+                        To run a "Currently Selected Commands" export, select all of the commands on the current page that you would like to share. Only the commands
+                        that are selected on the current page can be exported during a single export. Then navigate to the File menu on the top left side of the screen and select "Export..." Choose the
+                        "Currently Selected Commands" export type and click "OK." Finally, choose a directory to store the .sql Dump file. Providing a file name is
+                        not necessary, but if preferred, provide a file name that uses the .sql file extension, such as "Commands_4Ryan_Export.sql."
+                        When ready, click "Export." A Dump file will be immediately created containing instructions for Root Around on how
+                        to add the commands and notes that were exported, and how to recreate the platform and/or topic if necessary. Share the Dump file with others to import into their own Root Around
+                        Command Box and this will automatically add the commands for them.
+                    </p>
+                    <p> 
+                        <i> Note: Your Command Box will be unaffected by an export. Exports 
+                            only create an external file and do not alter any of the contents of a Command Box. </i>
+                    </p>
+    
+                </div>
+                <div class="float-child" style="margin:auto;"> 
+                    <video width="520" height="280" controls>
+                            <source src="selectedexport.mp4" type="video/mp4">  
+                    </video>
+                </div>
+                
+            </div>
+        
+        
+        <div id="imfull" class="side-by-side">    
+                <div class="usingRootAround">
+                    <header> <h3> Root Around - Full Imports </h3>
+                    </header>
+                    <p>
+                        Importing a dump file that was created from a Full export provides the ability to move your Command Box from one 
+                        computer to another, or to recover it in the event of hardware failure or another mishap. The import will
+                        automatically recreate the entire Command Box that was exported, including all of the platforms, commands, and 
+                        customizations. 
+                    </p>
+                    <p>
+                        <strong>NOTE:</strong> Importing a dump file from a Full export will overwrite the entire existing Command Box. Only import this
+                        type of dump file if you are moving your Command Box to a different computer or all of your existing commands
+                        are already present in the dump file and you only need to recover commands that were lost.
+                    </p>
+                    <p>
+                        To import a dump file that was created from a Full export, navigate to the File menu on the top left side of the screen and select
+                        "Import..." Locate the dump file you wish to import and click "Import." If you are sure that you want to import the
+                        dump file, click "Yes." The Command Box will then be automatically rebuilt to be identical to the Command Box that was
+                        exported. It may take a few minutes to complete the import and rebuild. 
+                    </p>
+                    <p> 
+                        <strong>NOTE:</strong> It is recommended to run a Full export before importing any dump file to be able to recover your current Command Box
+                        and undo any unwanted changes that occurred during the import.
+                    </p>
+    
+                </div>
+                <div class="float-child" style="margin:auto;"> 
+                    <video width="520" height="280" controls>
+                            <source src="fullimport.mp4" type="video/mp4">  
+                    </video>
+                </div>
+                
+            </div>
+        
+        <div id="pimport" class="side-by-side">    
+                <div class="usingRootAround">
+                    <header> <h3> Root Around - Platform Imports </h3>
+                    </header>
+                    <p>
+                        Importing a dump file that was created from a Platform export provides the ability for Root Around users to easily share
+                        platforms with each other. This type of sharing works best when the platform does not yet exist in your Command Box but
+                        you would like to add it with the commands from your peer's Root Around Command Box. Importing the dump file will
+                        automatically create the new platform for you and also add all of the commands and notes that were stored in that
+                        platform. 
+                    </p>
+                    <p>
+                        <strong>NOTE:</strong> If the platform already exists in your Command Box, importing a dump file from a Platform export 
+                        will overwrite all of the commands that currently exist in the platform. If you do not want to lose your existing commands
+                        in the platform but still want to add the commands from your peer, 
+                        import a dump file created from a "Currently Selected Commands" export instead. 
+                    </p>
+                    <p>
+                        To import a dump file that was created from a Platform export, navigate to the File menu on the top left side of the screen and select
+                        "Import..." Locate the dump file you wish to import and click "Import." If you are sure that you want to import the
+                        dump file, click "Yes" and then provide a name for the new platform. Your new platform and commands will then be added and be immediately ready for use.
+                    </p>
+                    <p> 
+                        <strong>NOTE:</strong> It is recommended to run a Full export before importing any dump file to be able to recover your current Command Box
+                        and undo any unwanted changes that occurred during the import.
+                    </p>
+    
+    
+                </div>
+                <div class="float-child" style="margin:auto;"> 
+                    <video width="520" height="280" controls>
+                            <source src="pfimport.mp4" type="video/mp4">  
+                    </video>
+                </div>
+                
+            </div>
+        
+        <div id="import" class="side-by-side">    
+                <div class="usingRootAround">
+                    <header> <h3> Root Around - Command Imports </h3>
+                    </header>
+                    <p>
+                        Importing a dump file that was created from a "Currently Selected Commands" export provides the ability for Root Around users to easily share
+                        commands with each other. Importing the dump file will automatically add all of the commands and notes that were exported, 
+                        as well as create the platform and/or topic under which the commands are stored if they do not already exist in the Command Box.
+                    </p>
+                    <p>
+                        <strong>NOTE:</strong> Importing a dump file from a "Currently Selected Commands" export will not overwrite or duplicate any of the
+                        existing platforms, commands or topics in the Command Box. It will only import what does not already exist in the Command Box.
+                    </p>
+                    <p>
+                        To import a dump file that was created from a "Currently Selected Commands" export, navigate to the File menu on the top left side of the screen and select
+                        "Import..." Locate the dump file you wish to import and click "Import." If you are sure that you want to import the
+                        dump file, click "Yes." Your new commands will then be imported and will be immediately ready for use.
+                    </p>
+                    <p> 
+                        <strong>NOTE:</strong> It is recommended to run a Full export before importing any dump file to be able to recover your current Command Box
+                        and undo any unwanted changes that occurred during the import.
+                    </p>
+    
+                </div>
+                <div class="float-child" style="margin:auto;"> 
+                    <video width="520" height="280" controls>
+                            <source src="cmdimport.mp4" type="video/mp4">  
+                    </video>
+                </div>
+                
+            </div>
+        
+                 
+    </body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Root Around</title>
+        <meta name="author" content="Beth Culler">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./prettyIndex.css">
+        <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.2/dist/terminal.min.css" />
+    </head>
+    <body>
+        <script src="./cool.js"></script>
+        <div class="index-header"> <h1 style="z-index:1"> > Root Around </h1> </div>
+            
+            <div id="myModal2" class="modal">
+                    <span class="close cursor" onclick="closeModal(2)">&times;</span>
+                    <div class="modal-content">
+
+                        <div class="mySlides2">
+                            <div class="numbertext">1 / 9</div>
+                            <img class="mimg" src="./screenshot.png" alt="Image1">
+                        </div>
+
+                        <div class="mySlides2">
+                            <div class="numbertext">2 / 9</div>
+                            <img class="mimg" src="./screenshot2.png" alt="Image2">
+                        </div>
+
+                        <div class="mySlides2">
+                            <div class="numbertext">3 / 9</div>
+                            <img class="mimg" src="./screenshot3.png" alt="Image3">
+                        </div>
+    
+                        <div class="mySlides2">
+                            <div class="numbertext">4 / 9</div>
+                            <img class="mimg" src="./screenshot4.png" alt="Image4">
+                        </div>
+                                
+                        <div class="mySlides2">
+                            <div class="numbertext">5 / 9</div>
+                            <img class="mimg" src="./screenshot5.png" alt="Image5">
+                        </div>
+                        
+                        <div class="mySlides2">
+                            <div class="numbertext">6 / 9</div>
+                            <img class="mimg" src="./screenshot6.png" alt="Image6">
+                        </div>
+                        
+                        <div class="mySlides2">
+                            <div class="numbertext">7 / 9</div>
+                            <img class="mimg" src="./screenshot7.png" alt="Image7">
+                        </div>
+                        
+                        <div class="mySlides2">
+                            <div class="numbertext">8 / 9</div>
+                            <img class="mimg" src="./screenshot8.png" alt="Image8">
+                        </div>
+                        
+                        <div class="mySlides2">
+                            <div class="numbertext">9 / 9</div>
+                            <img class="mimg" src="./screenshot9.png" alt="Image9">
+                        </div>
+    
+                        <a class="prev" style="color: gray;" onclick="plusSlides(-1, 2)">&#10094;</a>
+                        <a class="next" style="color: gray;" onclick="plusSlides(1, 2)">&#10095;</a>
+
+                        <div class="caption-container">
+                            <p id="caption2"></p>
+                        </div>
+                        <div style="display:none">
+                            <div class="column">
+                                <img class="demo2 cursor" src="./screenshot.png" style="width:100%" onclick="currentSlide(1, 2)" alt="Commands are organized by topic as well as command name, and are furthermore sorted by how to do various tasks">
+                            </div>
+                            <div class="column">
+                                <img class="demo2 cursor" src="./screenshot2.png" style="width:100%" onclick="currentSlide(2, 2)" alt="Long and complex queries are quickly copied with a simple double click">
+                            </div>
+                            <div class="column">
+                                <img class="demo2 cursor" src="./screenshot3.png" style="width:100%" onclick="currentSlide(3, 2)" alt="Commands can be edited or deleted">
+                            </div>
+                            <div class="column">
+                                <img class="demo2 cursor" src="./screenshot4.png" style="width:100%" onclick="currentSlide(4, 2)" alt="Topics can be renamed or deleted">
+                            </div>
+                            <div class="column">
+                                <img class="demo2 cursor" src="./screenshot5.png" style="width:100%" onclick="currentSlide(5, 2)" alt="New commands can be quickly and easily added">
+                            </div>
+                            <div class="column">
+                                <img class="demo2 cursor" src="./screenshot6.png" style="width:100%" onclick="currentSlide(6, 2)" alt="New platforms can be quickly and easily added">
+                            </div>
+                            <div class="column">
+                                <img class="demo2 cursor" src="./screenshot7.png" style="width:100%" onclick="currentSlide(7, 2)" alt="Platforms can be reordered or removed">
+                            </div>
+                            <div class="column">
+                                <img class="demo2 cursor" src="./screenshot8.png" style="width:100%" onclick="currentSlide(8, 2)" alt="Commands and platforms can be exported and imported to share with others">
+                            </div>
+                            <div class="column">
+                                <img class="demo2 cursor" src="./screenshot9.png" style="width:100%" onclick="currentSlide(9, 2)" alt="Commands can be easily searched by using the Search bar. Root Around will cycle through each command that matches the search description">
+                            </div>
+                        </div>
+                    </div>
+                </div>      
+            
+            <div id="navigator">
+                <div id="sticky">
+                    <a href="#top"> > Introduction</a>
+                    <a onclick="openModal(2);currentSlide(1, 2)"> > Features </a>
+                    <a href="#quickstart"> > Quick Start Guide </a>                 
+                    <a onclick="showUsingLinks()"> > Using </a>
+                    
+                    <div id="myDropdowns" class="usingDropdown">
+                        <a href="./using.html#add"> > All</a>
+                        <a href="./using.html#add"> > Adding commands</a>
+                        <a href="./using.html#edit"> > Editing commands </a>
+                        <a href="./using.html#copy"> > Copying commands </a>                 
+                        <a href="./using.html#delete"> > Deleting commands </a>
+                        <a href="./using.html#newtopic"> > Adding topics </a>
+                        <a href="./using.html#rename"> > Renaming topics </a>
+                        <a href="./using.html#deletetopic"> > Deleting topics </a>
+                        <a href="./using.html#addplatform"> > Adding platforms </a>
+                        <a href="./using.html#reorderplatform"> > Reordering platforms </a>
+                        <a href="./using.html#removeplatform"> > Removing platforms </a>
+                        <a href="./using.html#full"> > Exporting Full</a>
+                        <a href="./using.html#plat"> > Exporting Platforms</a>
+                        <a href="./using.html#cmd"> > Exporting Commands</a>
+                        <a href="./using.html#imfull"> > Importing Full</a>
+                        <a href="./using.html#pimport"> > Importing Platforms </a>
+                        <a href="./using.html#import"> > Importing Commands </a>
+                    </div>
+                </div>
+            </div>
+                
+           
+            <div id="top" class="side-by-side">    
+                <div class="aboutRootAround">
+                    <header> <h3> Root Around - Introduction </h3>
+                    </header>
+                    <p>
+                        Root Around is a personal, fully customizable command repository for System and Database Administrators or anyone else
+                        who frequently has to run commands on a command line, in a database, or in a computer system. Commands are organized by topic and sorted
+                        by how to do various tasks, rather than by command/utility name alone. Many utilities have obscure names, and many times
+                        administrators know what they need to do but they do not know or remember the command or utility name that they need to run. With being 
+                        able to search by task in addition to searching by command name, Root Around allows administrators to more quickly find 
+                        what they need to run while also providing instructions on how they need to run it.
+                    </p>
+                    <p>   
+                        Root Around currently offers hundreds of commands for Oracle and SQL Server database administration, and AIX, Linux and 
+                        Windows administration. The commands were curated by an Oracle/SQL Server Database Administrator who developed Root Around
+                        to end the days of having to say and hear from others "Give me five minutes while I root around my assortment of
+                        text files where I've written notes over the years to find that command." Root Around also provides administrators 
+                        the ability to add and remove commands, edit commands, write their own notes for each command, add new platforms, and 
+                        easily share commands and platforms with other Root Around users, so the Command Box has the ability to grow and be 
+                        tailored to everyone's specific needs, for administrators of any platform.                  
+                    </p>
+                    <p>
+                        Using Root Around makes the life of any administrator easier and more organized. All of the commands that an administrator
+                        will ever have to run can be stored in one easily accessible, highly organized and fully customizable tool that offers quick and easy
+                        lookup. Long and complex queries are quickly copied with a simple double click. Rooting around for commands now only takes
+                        a couple seconds and a lot less frustration with Root Around, allowing any administrator to be the most super root user 
+                        they can be.
+                    </p>
+                </div>
+                <div class="float-child"> 
+                    <figure>
+                    <img id="myImg" onclick="openModal(2);currentSlide(1, 2)" class="pcscreenshot" src="./pcscreenshot2.png" alt="Root Around Screenshot">
+                    <figcaption>Photo by <a href="https://unsplash.com/es/@quaritsch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Quaritsch Photography</a> on <a href="https://unsplash.com/s/photos/computer-screen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption>
+                    </figure>
+                </div>
+                
+            </div>
+        
+            <div  id="tutorial" >
+                <div id="inner-tutorial">
+                <div id="quickstart" class="console">
+                    <header> <h4> guest@RootAround </h4> 
+                    </header>
+                    <div class="consolebody">
+                        <p>> export DISPLAY=10.152.3.48:0.0</p>
+                        <div style="">
+                        <p>> playctl -video "How to use Root Around: Quick Start Guide"</p>
+                        <p style="text-indent:5%"> Press play to start video.. </p>
+                        <div class="quickguide">
+                        <video width="1020" height="720" controls>
+                            <source src="rootaround-quickguide.mp4" type="video/mp4">  
+                        </video>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+           
+            
+    </body>
+</html>

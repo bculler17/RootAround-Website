@@ -1,0 +1,344 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Oct 11, 2022, 10:36:28 AM
+    Author     : Beth Culler
+*/
+
+*{
+}
+
+html, body {
+    height: 100%; /* be as tall as the viewport */
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.index-header{
+    color: white;
+    padding-left:2%;
+    background-image: url("./roots.jpg");
+    z-index: 2;
+    position:fixed;
+    width: 100%;}
+
+/*#container {
+    position: absolute;
+    bottom: 0;
+    top:0;
+    width:100%;
+}*/
+
+#navigator {
+    /*display: flex;
+    width: 12rem;*/ 
+    /*display:inline-block;*/
+    width: auto;
+    padding-top:20px;
+    padding-bottom:0px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-right: 0.05rem solid black;
+    z-index: 1;
+    background-color:white;
+}
+
+#sticky {
+    margin-top:45%;
+    
+}
+
+#sticky a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+/*#sticky a:hover {
+    color: #000000;
+}*/
+
+.side-by-side {
+  display: flex;
+  margin: 0 auto;
+  border-bottom: 0.05rem solid black;
+}
+
+.side-by-side > div {
+  max-width: 45%;
+  padding:1%;
+  padding-bottom:3%;
+  height: auto;
+  flex: auto;
+}
+
+.float-child {
+    float: left;   
+}
+
+
+.aboutRootAround {
+    /*padding-top: 12rem;
+    margin-left: 12rem;*/
+    padding-bottom:2%;
+    /*border-bottom: 0.05rem solid black;*/
+    margin-top:10%;
+    margin-left:15%;
+}
+
+.aboutRootAround header {
+    padding-left: 6rem;
+    
+}
+
+.aboutRootAround p {
+    text-align: justify;
+    text-justify: inter-word;
+    padding-left: 4rem;
+    padding-right:4rem;
+    font-size: 0.85rem;
+   /* padding-right: 40rem; */
+}
+
+.pcscreenshot{
+    max-width: 100%;
+    height: auto;
+    object-fit:contain;
+    padding-left: 1rem;
+    padding-top: 9rem;
+}
+
+#tutorial {
+  width: 100%;
+  text-align: center;
+  margin:3.3rem;
+  margin-left:7%;
+  padding-top:2%;
+}
+
+#inner-tutorial {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.console {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 70rem;
+  height: 60rem;
+  box-sizing: border-box;
+  margin: auto;
+  padding-bottom: 5%;
+  text-align: left;
+}
+
+.console header {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #555;
+  height: 3rem;
+  padding-left:1rem;
+  padding-top:1rem;
+  line-height: 3rem;
+  text-align: left;
+  vertical-align: middle;
+  color: #DDD;
+}
+
+.console .consolebody {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-sizing: border-box;
+  padding: 20px;
+  height: calc(100% - 40px);
+  overflow: scroll;
+  background-color: #000;
+  color: #63de00;
+}
+
+.console .consolebody p {
+  line-height: 1.5rem;
+  padding-bottom: 0px;
+}
+
+/* The Using dropdown list */
+.usingDropdown {
+    display: none;
+    text-indent:1rem;
+    font-size: 0.85rem;
+    line-height:0.8rem
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; 
+    position:fixed;
+    z-index: 9; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background:rgba(0,0,0,0.9);
+    overflow:hidden;
+    border-radius: 0.3vw;
+    box-shadow: 0 0.07vw 0.2vw rgba(34, 25, 25, 0.4);
+    -moz-box-shadow: 0 0.07vw 0.13vw rgba(34,25,25,0.4);
+    -webkit-box-shadow: 0 0.07vw 0.2vw rgba(34, 25, 25, 0.4);
+}
+
+/*Modal Content*/
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 78.125vw;
+    top:3%;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 0.65vw;
+    right: 1.63vw;
+    font-size: 2.3vw;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides2 {
+    display: none;
+    margin: auto;
+    width: 70%;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 1.04vw;
+    margin-top: -3.9vw;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3vw;
+    transition: 0.6s ease;
+    border-radius: 0 0.2vw 0.2vw 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 0.2vw 0 0 0.2vw;
+}
+
+/* Position the "prev button" to the left */
+.prev {
+    left: 0;
+    border-radius: 0.2vw 0 0 0.2vw;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 0.8vw;
+    padding: 0.52vw 0.78vw;
+    position: absolute;
+    top: -0.98vw;
+}
+
+.mimg {
+    margin-bottom: 0.26vw;
+    width: auto;
+    height: 32.49vw;
+    object-fit: cover;
+    margin: auto;
+    padding-top:2%;
+}
+
+#myImg:hover {opacity: 0.9;}
+
+.caption-container {
+    text-align: center;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    padding: 0.13vw 1.04vw;
+    padding-top:1.04vw;
+    color: white;
+    font-size: 1em;
+}
+
+.demo2 {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.quickguide > video {
+    display: inline-block;
+    margin:0px;
+    padding:0px;   
+    
+}
+
+.quickguide {
+    text-align:center; 
+    position: relative;
+    top: -2.5vw;
+}
+
+.usingRootAround {
+    /*padding-top: 12rem;
+    margin-left: 12rem;*/
+    margin-bottom:5%;
+    /*border-bottom: 0.05rem solid black;*/
+    margin-top:5%;
+    margin-left:15%;
+}
+
+.usingRootAround header {
+    padding-left: 6rem;
+    
+}
+
+.usingRootAround p {
+    text-align: justify;
+    text-justify: inter-word;
+    padding-left: 4rem;
+    padding-right:4rem;
+    font-size: 0.85rem;
+   /* padding-right: 40rem; */
+}
