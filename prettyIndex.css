@@ -335,42 +335,31 @@ body {
   /* For mobile phones: */
    
   .side-by-side {
-      display: block;
-    position: relative;
-    width: 100%;
+     
 }
    .float-child {
-    position: absolute;
-    margin:auto;
-    right:0;
+    
 }
     
     .side-by-side > div {
-  padding:1%;
+ 
 }
 
 
 .aboutRootAround {
-    position:aboluste;
-    max-width: 100%;
-    right:0;
+   
 }
 
 .aboutRootAround header {
-    position: absolute;
-    right:0;
+    
 }
 
 .aboutRootAround p {
-    text-align: justify;
-    text-justify: inter-word;
+   
 }
     
     .pcscreenshot{
-    max-width: 100%;
-    height: auto;
-    object-fit:contain;
-    margin: auto;
+    
 }
 
 }
