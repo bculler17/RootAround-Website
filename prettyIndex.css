@@ -338,28 +338,32 @@ body {
     }
     
     .aboutRootAround header {
-        font-size: 1.1vw;
+        font-size: 1.4vw;
     }
 
     .aboutRootAround p {
         padding-right:0rem;
-        font-size: 1vw;
+        font-size: 1.3vw;
     }
     
     .usingRootAround p {
-        font-size: 1vw;
+        font-size: 1.3vw;
     }
     
     .usingRootAround header {
-         font-size: 1.1vw;    
+         font-size: 1.4vw;    
     }
     
     #sticky a {
-        font-size: 1vw;
+        font-size: 1.3vw;
     }
     
     #cap {
-        font-size: 0.98vw;
+        font-size: 1.1vw;
+    }
+    
+    .index-header{
+         font-size: 1.8vw;    
     }
 
 }
