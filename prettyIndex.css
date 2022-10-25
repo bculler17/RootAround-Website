@@ -333,6 +333,10 @@ body {
 
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */ 
+    .side-by-side {
+        position: relative;   
+    }
+      
     .side-by-side > div {
         max-width: 100%;
     }
