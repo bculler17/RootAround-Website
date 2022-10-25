@@ -335,41 +335,34 @@ body {
   /* For mobile phones: */
    
   .side-by-side {
-    display: block;
-    
+    position: relative;
+    width: 100%;
 }
    .float-child {
-    position: relative;
+    position: absolute;
     margin:auto;
-       padding:0 px;
+    right:0;
 }
     
     .side-by-side > div {
-  position: relative;
-    margin:auto;
-        padding:0 px;
-        width:100%;
+  padding:1%;
 }
 
 
 .aboutRootAround {
-    position:relative;
-    padding-right: 0 px;
+    position:aboluste;
     max-width: 100%;
+    right:0;
 }
 
 .aboutRootAround header {
-    position: relative;
-    padding: 0 px;
+    position: absolute;
+    right:0;
 }
 
 .aboutRootAround p {
     text-align: justify;
     text-justify: inter-word;
-    margin: auto;
-    font-size: 1 vh;
-    position: relative;
-    padding: 0 px;
 }
     
     .pcscreenshot{
