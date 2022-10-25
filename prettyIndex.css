@@ -342,3 +342,31 @@ body {
     font-size: 0.85rem;
    /* padding-right: 40rem; */
 }
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  * {
+    margin-top: 4%;
+  }
+  
+  .side-by-side {
+    height:65%;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutRootAround, .usingRootAround {
+    position:absolute;
+    top: 15%;
+    width: 100%;
+  }
+  
+  .float-child {    
+    position: absolute;
+    top:50%;
+    width: 100%;
+  }
+
+}
