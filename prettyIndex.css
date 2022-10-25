@@ -338,7 +338,7 @@ body {
     }
     
     .aboutRootAround {
-        margin-top:15%;
+        margin-top:17%;
     }
     
     .aboutRootAround header {
@@ -371,7 +371,9 @@ body {
     }
     
     .float-child {
-        float: none;   
+        float: none;
+        position: absolute;
+        bottom: 0;
     }
 
 }
