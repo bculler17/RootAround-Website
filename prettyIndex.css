@@ -333,9 +333,12 @@ body {
 
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */
+    body {
+        font-size: 1vw;
+    }
    
    .float-child {
-        float: right;
+        float: none;
     }
     
     .side-by-side > div {
