@@ -337,23 +337,29 @@ body {
         max-width: 100%;
     }
     
-    .aboutRootAround {   
-        margin-left:25%;
-    }
-    
     .aboutRootAround header {
-        padding-left: 8rem;
-        font-size: 0.5vw;
+        font-size: 1.1vw;
     }
 
     .aboutRootAround p {
-        padding-left: 6rem;
         padding-right:0rem;
-        font-size: 0.5vw;
+        font-size: 1vw;
+    }
+    
+    .usingRootAround p {
+        font-size: 1vw;
+    }
+    
+    .usingRootAround header {
+         font-size: 1.1vw;    
     }
     
     #sticky a {
-        font-size: 0.5vw;
+        font-size: 1vw;
+    }
+    
+    #cap {
+        font-size: 0.98vw;
     }
 
 }
