@@ -346,7 +346,7 @@ body {
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */
    body {
-    font-size:1.5vh;
+    font-size:1.5 vh;
    }
     
     .side-by-side {
@@ -359,9 +359,10 @@ body {
   padding:1%;
   padding-bottom:3%;
   height: auto;
+  border-bottom: none;
 }
     
-    .aboutRootAround {
+ .aboutRootAround {
     padding-bottom:2%;
     margin-left:15%;
 }
@@ -388,16 +389,6 @@ body {
     margin-left:15%;
 }
 
-.usingRootAround header {
-    padding-left: 6rem;
-    
-}
 
-.usingRootAround p {
-    text-align: justify;
-    text-justify: inter-word;
-    padding-left: 4rem;
-    padding-right:4rem;
-}
 
 }
