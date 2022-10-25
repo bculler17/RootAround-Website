@@ -343,8 +343,6 @@ body {
     
     .aboutRootAround {
         margin-top:17%;
-        position: absolute;
-        top: 0;
     }
     
     .aboutRootAround header {
@@ -356,10 +354,6 @@ body {
         font-size: 1.6vw;
     }
     
-    .usingRootAround p {
-        position: absolute;
-        top: 0;   
-    }
     
     .usingRootAround p {
         font-size: 1.6vw;
@@ -382,6 +376,8 @@ body {
     }
     
     .float-child {
+        max-width: 100%;
+        height: auto;
         float: none;
         position: absolute;
         bottom: 0;
