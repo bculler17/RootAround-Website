@@ -333,14 +333,17 @@ body {
 
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */ 
+    
+    .side-by-side {
+        display: block;   
+    }
       
     .side-by-side > div {
-        flex: 100%;
+        flex: none;
     }
     
     .aboutRootAround {
         margin-top:17%;
-        flex: 100%;
     }
     
     .aboutRootAround header {
@@ -352,9 +355,6 @@ body {
         font-size: 1.6vw;
     }
     
-    .usingRootAround {
-        flex: 100%;   
-    }
     
     .usingRootAround p {
         font-size: 1.6vw;
@@ -378,7 +378,7 @@ body {
     
     .float-child {
         float: none;
-        flex: 100%;
+        
     }
 
 }
