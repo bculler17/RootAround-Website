@@ -337,6 +337,10 @@ body {
         max-width: 100%;
     }
     
+    .aboutRootAround {
+        margin-top:15%;
+    }
+    
     .aboutRootAround header {
         font-size: 1.7vw;
     }
@@ -364,6 +368,10 @@ body {
     
     .index-header{
          font-size: 1.8vw;    
+    }
+    
+    .float-child {
+        float: none;   
     }
 
 }
