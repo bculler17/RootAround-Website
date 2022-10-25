@@ -335,12 +335,12 @@ body {
   /* For mobile phones: */ 
       
     .side-by-side > div {
-        max-width: 100%;
         flex: 100%;
     }
     
     .aboutRootAround {
         margin-top:17%;
+        flex: 100%;
     }
     
     .aboutRootAround header {
@@ -352,6 +352,9 @@ body {
         font-size: 1.6vw;
     }
     
+    .usingRootAround {
+        flex: 100%;   
+    }
     
     .usingRootAround p {
         font-size: 1.6vw;
@@ -374,10 +377,8 @@ body {
     }
     
     .float-child {
-        max-width: 100%;
-        height: auto;
         float: none;
-        
+        flex: 100%;
     }
 
 }
