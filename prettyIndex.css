@@ -344,21 +344,20 @@ body {
 }
     
     .side-by-side > div {
-  max-width: 100%;
-  height: auto;
-  padding-left:15%;
+  position: relative;
+    margin:auto;
 }
 
 
 .aboutRootAround {
-    padding-top:20px;
-    padding-left: 15%;
+    
+    padding-right: 1%;
     max-width: 100%;
 }
 
 .aboutRootAround header {
     position: relative;
-    padding-left: 18%;
+    padding-right: 1%;
 }
 
 .aboutRootAround p {
@@ -367,7 +366,7 @@ body {
     margin: auto;
     font-size: 1 vh;
     position: relative;
-    padding-left: 15%;
+    padding-right: 1%;
 }
     
     .pcscreenshot{
