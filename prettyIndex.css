@@ -334,32 +334,12 @@ body {
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */
    
-  .side-by-side {
-     
-}
    .float-child {
-    
-}
+        float: right;
+    }
     
     .side-by-side > div {
- 
-}
-
-
-.aboutRootAround {
-   
-}
-
-.aboutRootAround header {
-    
-}
-
-.aboutRootAround p {
-   
-}
-    
-    .pcscreenshot{
-    
-}
+        max-width: 100%;
+    }
 
 }
