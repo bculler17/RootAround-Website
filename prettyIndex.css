@@ -335,6 +335,7 @@ body {
   /* For mobile phones: */
    
   .side-by-side {
+      display: block;
     position: relative;
     width: 100%;
 }
