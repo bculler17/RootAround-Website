@@ -335,12 +335,11 @@ body {
   /* For mobile phones: */
    
   .side-by-side {
-    position: relative;
-    display: flex;
+    display: block;
 }
    .float-child {
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    padding-bottom: 0 px;
 }
     
     .side-by-side > div {
@@ -348,17 +347,18 @@ body {
   padding:1%;
   padding-bottom:3%;
   height: auto;
-  flex:auto;
+  padding-left:5%;
 }
 
 
 .aboutRootAround {
     margin:auto;
+    padding-left: 5%;
 }
 
 .aboutRootAround header {
     margin: auto;
-    
+    padding-left: 5%;
 }
 
 .aboutRootAround p {
@@ -366,7 +366,7 @@ body {
     text-justify: inter-word;
     margin: auto;
     font-size: 1.5 vh;
-   
+    padding-left: 5%;
 }
     
     .pcscreenshot{
