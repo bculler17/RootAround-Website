@@ -336,15 +336,15 @@ body {
    
   .side-by-side {
     display: block;
+    padding-top:20px;
 }
    .float-child {
     position: relative;
-    padding-bottom: 0 px;
+    margin:auto;
 }
     
     .side-by-side > div {
   max-width: 100%;
-  padding:1%;
   padding-bottom:3%;
   height: auto;
   padding-left:5%;
@@ -354,11 +354,13 @@ body {
 .aboutRootAround {
     margin:auto;
     padding-left: 5%;
+    max-width: 100%;
 }
 
 .aboutRootAround header {
     margin: auto;
     padding-left: 5%;
+    position: relative;
 }
 
 .aboutRootAround p {
@@ -367,6 +369,7 @@ body {
     margin: auto;
     font-size: 1.5 vh;
     padding-left: 5%;
+    position: relative;
 }
     
     .pcscreenshot{
