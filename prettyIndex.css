@@ -343,6 +343,8 @@ body {
     
     .aboutRootAround {
         margin-top:17%;
+        position: absolute;
+        top: 0;
     }
     
     .aboutRootAround header {
@@ -352,6 +354,11 @@ body {
     .aboutRootAround p {
         padding-right:0rem;
         font-size: 1.6vw;
+    }
+    
+    .usingRootAround p {
+        position: absolute;
+        top: 0;   
     }
     
     .usingRootAround p {
