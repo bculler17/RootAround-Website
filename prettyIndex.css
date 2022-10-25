@@ -348,10 +348,39 @@ body {
    
   .side-by-side {
     position: relative;
+    display: block;
 }
    .float-child {
     position: absolute;
     bottom: 0;
+}
+    
+    .side-by-side > div {
+  max-width: 100%;
+  padding:1%;
+  padding-bottom:3%;
+  height: auto;
+}
+
+
+.aboutRootAround {
+    padding-bottom:2%;
+    
+    margin-top:10%;
+    margin-left:15%;
+}
+
+.aboutRootAround header {
+    margin: auto;
+    
+}
+
+.aboutRootAround p {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: auto;
+    font-size: 1.5 vh;
+   
 }
 
 }
