@@ -384,7 +384,7 @@ body {
     .float-child {
         float: none;
         position: absolute;
-        bottom: 0;
+        top: auto;
         width: 100%;
         height: auto;
     }
