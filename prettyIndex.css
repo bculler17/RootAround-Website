@@ -345,50 +345,7 @@ body {
 
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */
-   body {
-    font-size:1.5 vh;
-   }
-    
-    .side-by-side {
-      display : block;
-      margin: 0 auto;
-}
-
-.side-by-side > div {
-  max-width: 100%;
-  padding:1%;
-  padding-bottom:3%;
-  height: auto;
-  border-bottom: none;
-}
-    
- .aboutRootAround {
-    padding-bottom:2%;
-    margin-left:15%;
-}
-
-.aboutRootAround header {
-    padding-left: 6rem;
-    
-}
-
-.aboutRootAround p {
-    text-align: justify;
-    text-justify: inter-word;
-    padding-left: 4rem;
-    padding-right:4rem;
-}
-
-
-  .float-child {
-    margin: auto;
-  }
-    
-    .usingRootAround {
-    margin-bottom:5%;
-    margin-left:15%;
-}
-
+   
 
 
 }
