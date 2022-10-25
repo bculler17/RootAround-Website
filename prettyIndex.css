@@ -334,22 +334,13 @@ body {
 @media (max-width: 800px) {
   /* For mobile phones: */ 
     
-    .side-by-side {
-        width: 100%;
-        height: auto;
-        position: relative;
-        align-items: center;
-        justify-content: center;  
-    }
       
     .side-by-side > div {
-        flex: none;
+        flex: 100%;
     }
     
-    .aboutRootAround, .usingRootAround {
-        position:absolute;
-        top:17%;
-        width: 100%;
+    .aboutRootAround {
+        margin-top:17%;
     }
     
     .aboutRootAround header {
@@ -383,10 +374,6 @@ body {
     
     .float-child {
         float: none;
-        position: absolute;
-        top: auto;
-        width: 100%;
-        height: auto;
     }
 
 }
