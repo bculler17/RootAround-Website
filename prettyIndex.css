@@ -36,6 +36,7 @@ body {
     border-right: 0.05rem solid black;
     z-index: 1;
     background-color:white;
+    overflow: auto;
 }
 
 #sticky {
